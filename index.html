@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="transparent_circle_logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo-container">
+      <img src="transparent_circle_logo.png" alt="Career Management Logo" class="logo">
+      <h1><b>Career Management</b></h1>
+    </div>
+    <p class="welcome-message">Welcome to <strong>Career Management</strong> – <i>Your Gateway to Securing Your Ideal Role!</i></p>
+  </header>
+
+  <!-- Hero Section (NEW) -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Accelerate Your Career Growth</h1>
+      <p><b>Professional guidance to land your dream job faster</b></p>
+      <a href="#job-form" class="cta-button"><b>Find Your Ideal Role</b> <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2><b>About Us</b></h2>
+    <p class="about-description">At Career Management, we are dedicated to helping job seekers like you find your dream job quickly and efficiently. Whether you're just starting out as a junior, climbing the ladder as a senior, leading teams as an executive, or steering organizations as a director, we've got the tools, resources, and expertise to guide you every step of the way. Our platform connects you with top employers and provides professional services to ensure you stand out in the competitive job market. Let us help you take the next step in your career journey today!</p>
+  </section>
+
+  <!-- Job Application Form -->
+  <section id="job-form">
+    <h2><b>Find Your Ideal Role</b></h2>
+    <form id="jobForm" action="https://getform.io/f/bllywvob" method="POST" enctype="multipart/form-data">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="contact">Email:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter your email address" required>
+      <label for="contact">Contact Number:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter your Contact / Whatsapp number" required>
+
+      <label for="jobLevel">Job Level:</label>
+      <select id="jobLevel" name="jobLevel" required>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+        <option value="executive">Executive</option>
+        <option value="director">Director</option>
+        <option value="other">Other</option>
+      </select>
+
+      <div id="otherJobLevel" style="display: none;">
+        <label for="otherJobLevelInput">Specify Job Level:</label>
+        <input type="text" id="otherJobLevelInput" name="otherJobLevelInput">
+      </div>
+
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+      <label for="resume">Upload Resume:</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+      <label for="coverLetter">Upload Cover Letter(Optional):</label>
+      <input type="file" id="coverLetter" name="coverLetter" accept=".pdf,.doc,.docx">
+
+      <input type="hidden" name="_gotcha" style="display:none !important">
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Professional Services Section -->
+  <section id="services">
+    <h2><b>Transform Your Career with Our Expertise Solutions:</b></h2>
+    <div class="service-container">
+  
+      <div class="service-box">
+        <h3><b>Professional ATS Resume</b></h3>
+        <p>Stand out in the competitive job market with an ATS-optimized resume that highlights your skills and achievements, ensuring it passes recruiter screenings.</p>
+        <a href="mailto:saniabdulrahman.career@gmail.com?subject=Professional ATS Resume Service" class="contact-now-button">Contact Now</a>
+      </div>
+  
+      <div class="service-box">
+        <h3><b>Compelling Cover Letter</b></h3>
+        <p>Make a strong first impression with a customized cover letter that effectively showcases your expertise, passion, and value to potential employers.</p>
+        <a href="mailto:saniabdulrahman.career@gmail.com?subject=Compelling Cover Letter Service" class="contact-now-button">Contact Now</a>
+      </div>
+  
+      <div class="service-box">
+        <h3><b>Optimized LinkedIn Profile</b></h3>
+        <p>Transform your LinkedIn profile into a powerful networking tool that attracts recruiters and aligns with your career goals for better opportunities.</p>
+        <a href="mailto:saniabdulrahman.career@gmail.com?subject=Optimized LinkedIn Profile Service" class="contact-now-button">Contact Now</a>
+      </div>
+  
+      <div class="service-box">
+        <h3><b>Career Consultation</b></h3>
+        <p>Receive personalized career guidance, including job search strategies, interview techniques, and industry insights to help you land your dream role.</p>
+        <a href="mailto:saniabdulrahman.career@gmail.com?subject=Career Consultation Service" class="contact-now-button">Contact Now</a>
+      </div>
+  
+    </div>
+  </section>
+  <!-- FAQ Section -->
+<section id="faq">
+  <h2><b>Frequently Asked Questions</b></h2>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      How can Career Management help me secure a job?
+    </div>
+    <div class="faq-answer">
+      <p>We connect job seekers with top employers by offering professional career guidance, resume optimization, and direct job application support. Our services ensure you stand out in the competitive job market.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      What industries do you specialize in?
+    </div>
+    <div class="faq-answer">
+      <p>We specialize in a wide range of industries, including technology, finance, healthcare, marketing, engineering, and more. Our experts tailor job search strategies to fit your career goals.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      How do I apply for a job through Career Management?
+    </div>
+    <div class="faq-answer">
+      <p>Simply fill out our Secure Your Ideal Role application form, including your preferred job title and location. Our team will review your submission and connect you with relevant opportunities.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      Do I need a cover letter to apply for a job?
+    </div>
+    <div class="faq-answer">
+      <p>A cover letter is optional, but we recommend submitting one to increase your chances of landing an interview. It allows you to showcase your skills and enthusiasm for the role.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      How long does it take to get a response after submitting my application?
+    </div>
+    <div class="faq-answer">
+      <p>Response times vary depending on the job and employer. However, we actively follow up on applications to ensure you receive timely feedback.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      Can I get career coaching or resume assistance?
+    </div>
+    <div class="faq-answer">
+      <p>Yes! Our expert team provides resume optimization, interview preparation, and career coaching services to help you present yourself confidently to employers.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      Is Career Management free to use?
+    </div>
+    <div class="faq-answer">
+      <p>Our job application service is free, but we offer premium career services like resume writing and coaching for a fee. Contact us for more details.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      How do I know if my application has been received?
+    </div>
+    <div class="faq-answer">
+      <p>Once you submit your application, you will receive a pop-up confirmation to ensure your details have been successfully sent.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      Can I apply for jobs outside my country?
+    </div>
+    <div class="faq-answer">
+      <p>Yes, we help job seekers explore both local and international job opportunities. Ensure you have the necessary work permits or visas for international roles.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">
+      How do I contact Career Management for further assistance?
+    </div>
+    <div class="faq-answer">
+      <p>You can reach us via Email or submit an inquiry through our website. Our team is always ready to assist you.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+      <h2><b>Success Stories</b></h2>
+      <div class="testimonials-grid">
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial 1">
+              <p><i>Career Management transformed my job search! Within weeks, I secured a role at a top company. Their guidance and resume optimization made all the difference!</i></p>
+              <h4>- Emily Carter, Product Manager</h4>
+          </div>
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial 2">
+              <p><i>I struggled to find the right tech job until I used Career Management. Their expertise connected me with recruiters, and now I work at a leading tech firm!</i></p>
+              <h4>- Raj Patel, Data Engineer</h4>
+          </div>
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Testimonial 3">
+              <p><i>The career coaching helped me gain confidence. I landed my dream job in finance, and I couldn’t be happier!</i></p>
+              <h4>- Sofia Martinez, Financial Advisor</h4>
+          </div>
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Testimonial 4">
+              <p><i>I applied through Career Management and got interview calls within days. Their professional approach is top-notch!</i></p>
+              <h4>- Kwame Osei, UX Designer</h4>
+          </div>
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Testimonial 5">
+              <p><i>Thanks to Career Management, I secured a leadership role. Their expert advice and personalized support gave me the edge I needed!</i></p>
+              <h4>- Naomi Williams, Operations Director</h4>
+          </div>
+          <div class="testimonial">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Testimonial 6">
+              <p><i>They helped me refine my CV and provided interview tips. I now work at an amazing company!</i></p>
+              <h4>- Daniel Kim, Software Developer</h4>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Trusted Partners Section -->
+<section id="trusted-partners">
+  <h2><b>Trusted Partners</b></h2>
+  <div class="partners-container">
+      <div class="partners-slider">
+          <img src="Linkedin.jpg" alt="LinkedIn">
+          <img src="pfizer.jpg" alt="Pfizer">
+          <img src="indeed.jpg" alt="Indeed">
+          <img src="google.jpeg" alt="Google">
+          <img src="randstad.png" alt="randstad">
+          <img src="recruiter.jpg" alt="recruiter">
+      </div>
+  </div>
+</section>
+
+  <!-- Contact Support Section -->
+<section id="contact-support">
+  <h2>Customer support and Assistance</h2>
+  <p><b>If you have any inquiries, feel free to reach out via email.</b></p>
+  <a href="mailto:careermanagement.com@gmail.com?subject=Assistance Needed" id="email-link">
+      <i class="fas fa-envelope"></i> support@careermanagement.com
+  </a>
+</section>
+  
+<!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> Career Management International, Inc., Houston, TX, USA.</p>
+    </div>
+
+  <p>© 2025 Career Management – Support and Assist in Securing Your Ideal Role</p>
+
+  <script src="script.js"></script>
+</footer>
+</body>
+</html>
